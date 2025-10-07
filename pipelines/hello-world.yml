@@ -8,7 +8,9 @@ jobs:
       platform: linux
       image_resource:
         type: registry-image
-        source: { repository: docker.comcast.net/busybox }
+        source: 
+          repository: docker.comcast.net/busybox
+          tag: latest
       run:
         path: echo
         args: ["Hello world!"]
