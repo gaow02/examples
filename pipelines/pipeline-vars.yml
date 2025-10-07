@@ -8,7 +8,7 @@ jobs:
       platform: linux
       image_resource:
         type: registry-image
-        source: { repository: busybox }
+        source: { repository: docker.comcast.net/busybox }
       run:
         path: echo
         args: ["Hello, ((hello))!"]
@@ -20,7 +20,7 @@ jobs:
       platform: linux
       image_resource:
         type: registry-image
-        source: { repository: busybox }
+        source: { repository: docker.comcast.net/busybox }
       run:
         path: echo
         args: ["Hello, ((hello))!"]
